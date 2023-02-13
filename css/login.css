@@ -1,0 +1,49 @@
+body{
+    background:url('./../image/houses.png');
+    background-size: cover;
+    background-position: center;
+}
+.info{
+    width: 320px;
+    height: 420px;
+    background: rgb(48, 7, 87);
+    color: #fff;
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    box-sizing: border-box;
+    padding: 60px 30px;
+    border-radius: 12px;
+}
+h3{
+    
+    font-size: 2vw;
+    font-weight: bold;
+    text-align: center;
+}
+a{
+    color: #fff;
+}
+label{
+    font-size:large;
+    font-weight: bold;
+}
+input{
+    width: 100%;
+    margin-bottom: 5px;
+  
+}
+.text{
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid #fff;
+    outline: none;
+    height: 40px;
+    margin-bottom: 8px;
+    color: #fff;
+    font-size: 15px;
+}
+.button{
+ 
+}

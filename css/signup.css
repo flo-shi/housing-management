@@ -1,0 +1,41 @@
+body{
+    background:url('/.//image/houses.png');
+    background-size: cover;
+    background-position: center;
+}
+div{
+    background: rgb(48, 7, 87);
+    color: white ;
+    height: 450px;
+    width: 350px;
+    border-radius: 15px;
+    position:absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% , -50%);
+    padding: 30px 40px;
+}
+h3{
+    font-size: 2vw;
+    font-weight: bold;
+    text-align: center;
+}
+.button{
+    background-color: rgb(236, 27, 97);
+    color: white;
+   
+}
+label{
+    font-size:large;
+    font-weight: bold;
+}
+.text{
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid #fff;
+    outline: none;
+    height: 40px;
+    margin-bottom: 8px;
+    color: #fff;
+    font-size: 15px;
+}
