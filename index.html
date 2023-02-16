@@ -1,137 +1,214 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" 
-    content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick.css"/>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick.css"
+    />
     <!-- Add the slick-theme.css if you want default styling -->
-    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick-theme.css"/>
-    <link rel="stylesheet" href="css/housing.css">
-    <script src="javascript/jquery.min.js" ></script>
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick-theme.css"
+    />
+    <link rel="stylesheet" href="css/housing.css" />
+    <script src="javascript/jquery.min.js"></script>
     <script src="javascript/housing.js"></script>
-    <script type="text/javascript" src="https://cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick.min.js"></script>
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick.min.js"
+    ></script>
     <title>Rental management system</title>
-</head>
-<body>
+  </head>
+  <body>
     <header>
-         <div class="header">
-            <nav>
-                <div class="logo"></div>
-                <div class="nav-links">
-                    <ul>
-                    <li><a href="">Home</a></li>
-                    <li><a href="./pages/sign-up.html">Features</a></li>
-                    <li><a href="./pages/login.html">About</a></li>
-                    <li><a href="#">Contact us</a></li>
-                    <li><button class="login btn btn-outline-info" onclick="Hi()"> login </button></li>
-                    <li><button class="signup btn btn-default">signup</button></li>
+      <div class="header">
+        <nav>
+          <div class="logo"></div>
+          <div class="nav-links">
+            <ul>
+              <li><a href="">Home</a></li>
+              <li><a href="./pages/sign-up.html">Features</a></li>
+              <li><a href="./pages/login.html">About</a></li>
+              <li><a href="#">Contact us</a></li>
+              <li>
+                <button class="login btn btn-outline-info" onclick="Hi()">
+                  login
+                </button>
+              </li>
+              <li><button class="signup btn btn-default">signup</button></li>
             </ul>
-        </div>
-    </nav>
-</div>
-</header>
-<!-- The first section-->
+          </div>
+        </nav>
+      </div>
+    </header>
+    <!-- The first section-->
     <section class="sctn1">
-        <div>
-            <img id="img1" src="image/interior.png" alt="Interior of house"class="float-end ">
-            <h1>Welcome to Tenalord!</h1>
-            <p>A platform built by tenants, for tenants. <br> 
-                Sign up and let us work for you .</p>
-            <button class="signup btn btn-default">Sign up</button>
-        </div>
-        <p class="landlord">Are you a property owner? <a href="">Register here</a> </p>
+      <div>
+        <img
+          id="img1"
+          src="image/interior.png"
+          alt="Interior of house"
+          class="float-end"
+        />
+        <h1>Welcome to Tenalord!</h1>
+        <p>
+          A platform built by tenants, for tenants. <br />
+          Sign up and let us work for you .
+        </p>
+        <button class="signup btn btn-default">Sign up</button>
+      </div>
+      <p class="landlord">
+        Are you a property owner? <a href="">Register here</a>
+      </p>
     </section>
     <!-- The second section-->
     <section class="sctn2">
-        <div>
-            <h3>The best platform that <br> offers the ultimate experience <br> for tenants</h3>
-            <p>Tenalord allows you to search for your prefered home <br> from a variety
-                 of a wide range of vacant houses <br> faster, easier and customized for you.
-            </p>
-        </div>
-
+      <div>
+        <h3>
+          The best platform that <br />
+          offers the ultimate experience <br />
+          for tenants
+        </h3>
+        <p>
+          Tenalord allows you to search for your prefered home <br />
+          from a variety of a wide range of vacant houses <br />
+          faster, easier and customized for you.
+        </p>
+      </div>
     </section>
     <!--The third section-------- Carousel-------->
-    <section class="carousel" >
-        <div data-slick='{"slidesToShow": 3, "slidesToScroll": 1, "autoplay": true}' id="carousel">
-            <!-- ist card -->
-                <div class="card">
-                    <div class="card-body">
-                        <p>Applying was so easy same as <span>sending service requests.</span>  Would definitly recommend!</p>
-                    </div>
-                    <div class="card-footer"> 
-                        <img src="./image/interior.png" alt="">
-                        <h6>Lorem</h6>
-                        <p>tenant</p>
-                    </div>
-                </div>
-            <div>
-                <div class="card">
-                    <div class="card-body">
-                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. officia voluptates?</p>
-                    </div>
-                    <div class="card-footer"> 
-                        <img src="./image/interior.png" alt="">
-                        <h6>Lorem</h6>
-                        <p>lorem</p>
-                    </div>
-                </div>
-            </div>
-            <div>
-                <div class="card">
-                    <div class="card-body">Content</div>
-                    <div class="card-footer">
-                        <h6>Lorem</h6>
-                        <p>lorem</p>
-                    </div>
-                </div>
-            </div>
-            <div>
-                <div class="card">
-                    <div class="card-body">Content</div>
-                    <div class="card-footer">Footer</div>
-                </div>
-            </div>
-            <div>
-                <div class="card">
-                    <div class="card-body">Content</div>
-                    <div class="card-footer">Footer</div>
-                </div>
-            </div>
+    <section class="carousel">
+      <div
+        data-slick='{"slidesToShow": 3, "slidesToScroll": 1, "autoplay": true}'
+        id="carousel"
+      >
+        <!-- ist card -->
+        <div class="card">
+          <div class="card-body">
+            <p class="quote"></p>
+            <p class="quote"></p>
+            <p>
+              Applying was so easy same as
+              <span>sending service requests.</span> Would definitly recommend!
+            </p>
+          </div>
+          <div class="card-footer">
+            <img src="./image/interior.png" alt="" />
+            <h6>Lorem, ipsum dolor.</h6>
+            <p>Lorem, ipsum.</p>
+          </div>
         </div>
+        <div class="card">
+          <div class="card-body">
+            <p class="quote"></p>
+            <p class="quote"></p>
+            <p>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. officia
+              voluptates?
+            </p>
+          </div>
+          <div class="card-footer">
+            <img src="./image/interior.png" alt="" />
+            <h6>Lorem, ipsum dolor.</h6>
+            <p>Lorem, ipsum.</p>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-body">
+            <p class="quote"></p>
+            <p class="quote"></p>
+          </div>
+          <div class="card-footer">
+            <img src="./image/interior.png" alt="" />
+            <h6>Lorem, ipsum dolor.</h6>
+            <p>Lorem, ipsum.</p>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-body">
+            <p class="quote"></p>
+            <p class="quote"></p>
+          </div>
+          <div class="card-footer">
+            <img src="./image/interior.png" alt="" />
+            <h6>Lorem, ipsum dolor.</h6>
+            <p>Lorem, ipsum.</p>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-body">
+            <p class="quote"></p>
+            <p class="quote"></p>
+          </div>
+          <div class="card-footer">
+            <img src="./image/interior.png" alt="" />
+            <h6>Lorem, ipsum dolor.</h6>
+            <p>Lorem, ipsum.</p>
+          </div>
+        </div>
+      </div>
     </section>
     <!-- 4th section.... FAQ -->
     <section id="faq">
-        <h2>Frequently asked questions</h2>
-        <img id="img2" src="./image/faq.png" alt="" class="float-end">
-        <div id="que">
-            <div>
-                <label for="first">Why tenalord? <span>&#8853;</span></label>
-                <input type="radio" name="tl" id="first">
-                <p>Excellent customer experience is what drives us! Happy tenants. With our full service platform for residential real estate we have all the basics covered. <br>
-                     One simple and intuitive tool to drive direct and indirect value right away.
-                     We are the best of tech and real estate</p>
-            </div>
-            <div>
-                <label for="second">Cost to use tenalord? <span>&#8853;</span></label>
-                <input type="radio" name="tl" id="second">
-                <p>Tenalord is absolutely free to use for house searching. <br>
-                It however has subscription based solution for landlords. 
-                Please contact us for a quote and offer that fits your specific needs.</p>
-            </div>
-            <div>
-                <label for="third">Who should use Tenalord? <span>&#8853;</span></label>
-                <input type="radio" name="tl" id="third">
-                <p>Are you seeking to find a dream home for you or your family in Kenya? You have a couple of apartments and you want to avertise them? <br>
-                    Tenalord got you. welcome</p>
-            </div>    
+      <h2>Frequently asked questions</h2>
+      <img id="img2" src="./image/faq.png" alt="" class="float-end" />
+      <div id="que">
+        <div>
+          <label for="first" class="label"
+            >Why tenalord? <span>&#8853;</span></label
+          >
+          <input type="radio" name="tl" id="first" />
+          <p>
+            Excellent customer experience is what drives us! Happy tenants. With
+            our full service platform for residential real estate we have all
+            the basics covered. <br />
+            One simple and intuitive tool to drive direct and indirect value
+            right away. We are the best of tech and real estate
+          </p>
         </div>
-
+        <div>
+          <label for="second" class="label"
+            >Cost to use tenalord? <span>&#8853;</span></label
+          >
+          <input type="radio" name="tl" id="second" />
+          <p>
+            Tenalord is absolutely free to use for house searching. <br />
+            It however has subscription based solution for landlords. Please
+            contact us for a quote and offer that fits your specific needs.
+          </p>
+        </div>
+        <div>
+          <label for="third" class="label"
+            >Who should use Tenalord? <span>&#8853;</span></label
+          >
+          <input type="radio" name="tl" id="third" />
+          <p>
+            Are you seeking to find a dream home for you or your family in
+            Kenya? You have a couple of apartments and you want to avertise
+            them? <br />
+            Tenalord got you.
+          </p>
+        </div>
+        <div>
+          <label for="fourth" class="label"
+            >Work together with Tenalord? <span>&#8853;</span></label
+          >
+          <input type="radio" name="tl" id="fourth" />
+          <p>
+            With love for our users (and developers) we’ve build a cloud-based
+            platform you and your team can use at the same time. <br />
+            Together, we develop constantly to improve your experience, always
+            ready to innovate. This way Rentpal will always fit your needs and
+            those of your users.
+          </p>
+        </div>
+      </div>
     </section>
-    
-
-</body>
+  </body>
 </html>

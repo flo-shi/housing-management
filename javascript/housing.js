@@ -14,5 +14,15 @@ $('#carousel').slick()
 }
 var signUpBtn= document.getElementsByClassName("signup")[0];
 signUpBtn.addEventListener('click',function(){
-   window.location.href="./pages/sign-up.html";
+   window.location.href="./pages/sign-up.html"; 
 })*/
+
+const label = document.querySelectorAll(".label")
+const labelArray = [...label]
+label.forEach((element) => {
+   element.addEventListener("click" , () => {
+      element.classList.add("active")
+   })
+})
+
+console.log(labelArray)
