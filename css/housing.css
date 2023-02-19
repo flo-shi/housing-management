@@ -92,7 +92,7 @@ body{
     font-weight: 300;
     font-size: 2vw;
 }
-/*------carousel-----card------*/
+/*---section 2------carousel--------*/
 .carousel{
     margin-bottom: 100px;
 }
@@ -155,7 +155,7 @@ body{
 
 
 
-/* --------------------section---------------------3 */
+/* --------------------section 3 ---- faq*/
 #faq{
     /* margin-bottom: 20px; */
     /* background-color: yellow; */
@@ -199,7 +199,8 @@ body{
 
 }
 #que div label span{
-    font-size: larger;
+    font-size: 30px;
+    font-weight: 300;
 }
 #que div label + input[type="radio"]{
     display: none;
@@ -216,9 +217,73 @@ body{
 #que div label + input[type="radio"]:checked + p{
     max-height: 400px;
 }
+#que div label.toggle{
+    color: rgb(236, 27, 97);
+}
 #que div label:hover{
     color: rgb(236, 27, 97);
 }
-#que div label.active{
-    color: rgb(236, 27, 97);
+
+/* --------Section 5-------- footer------ */
+footer{
+    margin-top: 200px;
+    width: 100%;
+    height: 400px;
+    background: linear-gradient(to right, rgb(243, 119, 161),rgb(89, 37, 138));
+    border-top-left-radius: 125px;
+    color: white;
+    line-height: 20px;
+    padding: 100px 0 30px;
+}
+.row{
+    width: 85%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+col{
+    flex-basis: 25%;
+    padding: 10px;
+}
+.row .col h4{
+    font-size: 3vw;
+    font-weight: 700;
+}
+.row .col h5{
+    font-weight: 700;
+    margin-bottom: 30px;
+}
+.email-id{
+    width: fit-content;
+    border-bottom: 1px solid #ccc;
+    margin: 20px 0;
+}
+.row .col #icons{
+    margin-left: 30px;
+    border-bottom: 2px solid rgb(236, 27, 97);
+}
+li{
+    list-style: none;
+}
+.social{
+    display: flex;
+}
+.icon{
+    width: 22px;
+    height: 22px;
+    background: transparent;
+    border-radius: 50%;
+    margin-right: 10px;
+    cursor: pointer;
+}
+.column{
+    margin-bottom: 50px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+.column p{
+    cursor: pointer;
+    font-weight: 500;
 }
