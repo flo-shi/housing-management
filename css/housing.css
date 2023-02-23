@@ -217,9 +217,6 @@ body{
 #que div label + input[type="radio"]:checked + p{
     max-height: 400px;
 }
-#que div label.toggle{
-    color: rgb(236, 27, 97);
-}
 #que div label:hover{
     color: rgb(236, 27, 97);
 }

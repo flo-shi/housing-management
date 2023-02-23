@@ -7,10 +7,10 @@ $('.signup').click(function(){
    window.location.href="./pages/sign-up.html"
 })
 $('#carousel').slick()
-// $('label').click(function(){
-//    $(this).css("color","rgb(236, 27, 97)")
+$('label').click(function(){
+   $(this).css("color","rgb(236, 27, 97)")
 
-// })
+})
 })
 
 /*function Hi(){
