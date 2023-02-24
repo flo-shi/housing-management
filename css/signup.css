@@ -1,3 +1,6 @@
+.show{
+    outline: 1px solid red;
+}
 body{
     background:url('./../image/houses.png');
     background-size: cover;
@@ -11,9 +14,18 @@ body{
     margin-top: 20px;
     margin-bottom: 20px;
 }
+.logo{
+    width: 220px;
+    height: 120px;
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    fill: transparent;
+    border-radius: 15px;
+}
 .info{
     width: 550px;
-    height: 470px;
+    height: 700px;
     background: rgb(250, 233, 211);
     top: 60%;
     left: 50%;
@@ -24,23 +36,37 @@ body{
     border-radius: 25px;
 }
 h3{
-    font-size: 2vw;
+    color: rgb(50, 14, 85);
+    font-size: 3vw;
     font-weight: bold;
     text-align: center;
+    margin-bottom: 40px;
+}
+.name > div{
+    width: 50%;
 }
 .name{
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    justify-content: space-between;
+    display: flex;
+    /* grid-template-columns: repeat(2, 1fr);
+    justify-content: space-between; */
 
 }
 .button{
-    background-color: rgb(236, 27, 97);
-    color: white;
-   
+    background-color: rgb(250, 233, 211);
+    border-radius:7px ;
+    padding: 10px 15px;
+    color: black;
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),
+    0 17px 50px 0 rgba(0,0,0,0.19);
+    border: none;
+    width: 200px;
+    height: 50px;
+    margin-left: 28%;
+    transition-duration: 0.4s;
 }
 label{
-    font-size:large;
+    color: rgb(50, 14, 85);
+    font-size: larger;
     font-weight: bold;
 }
 .text{
