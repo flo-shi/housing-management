@@ -7,7 +7,6 @@ body{
     width: 400px;
     height: 470px;
     background: rgb(250, 233, 211);
-    color: rgb(50, 14, 85);
     top: 60%;
     left: 50%;
     position: absolute;
@@ -25,8 +24,8 @@ body{
     margin-bottom: 20px;
 }
 .logo{
-    width: 300px;
-    height: 200px;
+    width: 220px;
+    height: 120px;
     position: absolute;
     bottom: 10px;
     right: 10px;
@@ -34,10 +33,11 @@ body{
     border-radius: 15px;
 }
 h3{
-    
+    color: rgb(50, 14, 85);
     font-size: 3vw;
     font-weight: bold;
     text-align: center;
+    margin-bottom: 40px;
 }
 .info div{
     text-align: center;
@@ -45,6 +45,7 @@ h3{
     color: rgb(50, 14, 85);
 }
 label{
+    color: rgb(50, 14, 85);
     font-size: larger;
     font-weight: bold;
 }
@@ -59,12 +60,10 @@ input{
     border-bottom: 2px solid rgb(82, 51, 10);
     outline: none;
     height: 40px;
-    margin-bottom: 8px;
-    color: #fff;
+    color: black;
     font-size: 15px;
 }
 button{
-    background-color:rgb(236, 27, 97);
     border-radius:7px ;
     padding: 10px 15px;
     color: white;
@@ -74,5 +73,8 @@ button{
     width: 200px;
     height: 50px;
     margin-left: 17%;
-    margin-top: 20px;
+    transition-duration: 0.4s;
+}
+button:hover{
+    color: rgb(168, 106, 25);
 }
