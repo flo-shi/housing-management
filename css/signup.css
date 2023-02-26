@@ -5,14 +5,15 @@ body{
     background:url('./../image/houses.png');
     background-size: cover;
     background-position: center;
+    /* filter: blur(5px); */
 }
 .keys{
     width: 100px;
     height: 100px;
     border-radius: 15px;
     margin-left: 46%;
-    margin-top: 20px;
-    margin-bottom: 20px;
+    margin-top: 15px;
+    margin-bottom: 15px;
 }
 .logo{
     width: 220px;
@@ -25,7 +26,7 @@ body{
 }
 .info{
     width: 550px;
-    height: 700px;
+    min-height: 470px;
     background: rgb(250, 233, 211);
     top: 60%;
     left: 50%;
@@ -34,16 +35,20 @@ body{
     box-sizing: border-box;
     padding: 20px 30px;
     border-radius: 25px;
+    margin-bottom: 50px;
 }
 h3{
     color: rgb(50, 14, 85);
     font-size: 3vw;
     font-weight: bold;
     text-align: center;
-    margin-bottom: 40px;
+    margin-bottom: 30px;
 }
 .name > div{
     width: 50%;
+}
+.name > div > label{
+    display: block;
 }
 .name{
     display: flex;
@@ -51,7 +56,7 @@ h3{
     justify-content: space-between; */
 
 }
-.button{
+button{
     background-color: rgb(250, 233, 211);
     border-radius:7px ;
     padding: 10px 15px;
@@ -62,6 +67,7 @@ h3{
     width: 200px;
     height: 50px;
     margin-left: 28%;
+    margin-top: 30px;
     transition-duration: 0.4s;
 }
 label{
@@ -76,6 +82,11 @@ label{
     outline: none;
     height: 40px;
     margin-bottom: 8px;
-    color: #fff;
+    color: black;
     font-size: 15px;
+}
+.login{
+    display: inline-block;
+    margin-left: 30%;
+    margin-top: 30px;
 }
