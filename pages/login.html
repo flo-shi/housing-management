@@ -2,6 +2,10 @@
   <head>
     <link rel="stylesheet" href="./../css/bootstrap.min.css" />
     <link rel="stylesheet" href="./../css/login.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+    />
     <title>Login form</title>
   </head>
   <body>
@@ -17,16 +21,19 @@
           placeholder="Enter Username"
         />
         <br />
-        <label for="password">Password</label> <br />
-        <input
-          class="text"
-          type="password"
-          name="password"
-          placeholder="Enter Password"
-        />
+        <label for="password" class=""> Password</label> <br />
+        <div class="password">
+          <input
+            class="text"
+            type="password"
+            name="password"
+            placeholder="Enter Password"
+          />
+          <i class="eye fa-regular fa-eye"></i>
+        </div>
       </form>
       <button class="btn btn-default">Get Started</button>
-      <div>
+      <div class="reg">
         <a href="#">Forgot password?</a> <br />
         <a href="#">Don't have an account?</a>
       </div>

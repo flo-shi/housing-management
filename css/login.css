@@ -1,3 +1,6 @@
+.show{
+    border: 2px solid red;
+}
 body{
     background:url('./../image/houses.png');
     background-size: cover;
@@ -39,10 +42,9 @@ h3{
     text-align: center;
     margin-bottom: 40px;
 }
-.info div{
+.reg{
     text-align: center;
     margin-top: 40px;
-    color: rgb(50, 14, 85);
 }
 label{
     color: rgb(50, 14, 85);
@@ -59,6 +61,7 @@ input{
     border: none;
     border-bottom: 2px solid rgb(82, 51, 10);
     outline: none;
+    width: 90%;
     height: 40px;
     color: black;
     font-size: 15px;
@@ -77,4 +80,17 @@ button{
 }
 button:hover{
     color: rgb(168, 106, 25);
+}
+.password{
+    background: transparent;
+    border: none;
+    border-bottom: 2px solid rgb(82, 51, 10);
+    outline: none;
+    width: 90%;
+    height: 40px;
+    color: black;
+    font-size: 15px;
+}
+.eye{
+    cursor: pointer;
 }

@@ -52,9 +52,6 @@ h3{
 }
 .name{
     display: flex;
-    /* grid-template-columns: repeat(2, 1fr);
-    justify-content: space-between; */
-
 }
 button{
     background-color: rgb(250, 233, 211);
@@ -78,7 +75,7 @@ label{
 .text{
     background: transparent;
     border: none;
-    border-bottom: 1px solid #fff;
+    border-bottom: 2px solid rgb(82, 51, 10);
     outline: none;
     height: 40px;
     margin-bottom: 8px;
@@ -89,4 +86,7 @@ label{
     display: inline-block;
     margin-left: 30%;
     margin-top: 30px;
+}
+.eye{
+    cursor: pointer;
 }

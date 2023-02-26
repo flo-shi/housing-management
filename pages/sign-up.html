@@ -3,6 +3,10 @@
   <head>
     <link rel="stylesheet" href="./../css/bootstrap.min.css" />
     <link rel="stylesheet" href="./../css/signup.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+    />
     <title>Sign up page</title>
   </head>
   <body>
@@ -54,26 +58,32 @@
         <div class="name">
           <div>
             <label for="password">Password</label>
-            <input
-              class="text"
-              type="password"
-              name="password"
-              placeholder="Enter password:"
-            />
+            <div class="password">
+              <input
+                class="text"
+                type="password"
+                name="password"
+                placeholder="Enter password:"
+              />
+              <i class="eye fa-regular fa-eye"></i>
+            </div>
           </div>
           <div>
             <label for="confirm password"> Confirm password</label>
-            <input
-              class="text"
-              type="password"
-              name="confirm password"
-              placeholder="Confirm your Password:"
-            />
+            <div class="password">
+              <input
+                class="text"
+                type="password"
+                name="confirm password"
+                placeholder="Confirm your Password:"
+              />
+              <i class="eye fa-regular fa-eye"></i>
+            </div>
           </div>
         </div>
       </form>
       <button class="btn btn-default">Get Started</button>
-      <a class="login show" href="./login.html">Already have an account?</a>
+      <a class="login" href="./login.html">Already have an account?</a>
     </div>
     <img class="logo" src="./../image/tenalord-logo.png" alt="logo" />
   </body>
