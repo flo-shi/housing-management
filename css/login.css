@@ -82,6 +82,7 @@ button:hover{
     color: rgb(168, 106, 25);
 }
 .password{
+    /* display: flex; */
     background: transparent;
     border: none;
     border-bottom: 2px solid rgb(82, 51, 10);
@@ -91,6 +92,7 @@ button:hover{
     color: black;
     font-size: 15px;
 }
-.eye{
+#eye{
+    display: none;
     cursor: pointer;
 }

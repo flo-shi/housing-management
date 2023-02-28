@@ -255,6 +255,7 @@ col{
     margin-bottom: 30px;
 }
 .email-id{
+    cursor: pointer;
     width: fit-content;
     border-bottom: 1px solid #ccc;
     margin: 20px 0;
