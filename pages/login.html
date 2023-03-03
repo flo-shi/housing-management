@@ -6,6 +6,7 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
     />
+    <script src="/./javascript/housing.js"></script>
     <title>Login form</title>
   </head>
   <body>
@@ -22,15 +23,18 @@
         />
         <br />
         <label for="password" class=""> Password</label> <br />
-        <div class="password show">
+        <div class="password">
           <input
             class="text"
+            id="password"
             type="password"
             name="password"
             placeholder="Enter Password"
           />
-          <i id="eye" class="fa-regular fa-eye"></i>
-          <i id="eye-slash" class="fa-regular fa-eye-slash"></i>
+          <span class="hide" onclick="showPassword()">
+            <i id="eye" class="fa-regular fa-eye"></i>
+            <i id="eye-slash" class="fa-regular fa-eye-slash"></i>
+          </span>
         </div>
       </form>
       <button class="btn btn-default">Get Started</button>

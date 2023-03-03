@@ -92,7 +92,10 @@ button:hover{
     color: black;
     font-size: 15px;
 }
-#eye{
-    display: none;
+.hide{
     cursor: pointer;
 }
+#eye{
+    display: none;
+}
+#
