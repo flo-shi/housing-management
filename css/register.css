@@ -1,0 +1,18 @@
+.show{
+    border: 1px solid red;
+}
+body{
+    background-color: rgb(253, 229, 255);
+    margin-left: 100px;
+}
+p{
+
+}
+button{
+    background-color: rgb(180, 85, 189);
+    margin: 40px 60px;
+    padding: 15px 60px;
+    border: none;
+    border-radius: 15px;
+    color: #fff;
+}
