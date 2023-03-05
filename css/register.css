@@ -41,3 +41,17 @@ button{
     font-size: large;
     font-weight: 500;
 }
+.next{
+    color: rgb(236, 27, 97);
+    margin-left: 230px;
+    font-weight: 400;
+}
+.back{
+    color: rgb(236, 27, 97);
+    /* margin-left: 230px; */
+    margin-top: 100px;
+    font-weight: 300;
+}
+a{
+    margin-left: 10px;
+}
