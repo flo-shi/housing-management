@@ -79,8 +79,11 @@ label{
     outline: none;
     height: 40px;
     margin-bottom: 8px;
-    color: black;
     font-size: 15px;
+}
+button a{
+    text-decoration: none;
+    color: black;
 }
 .login{
     display: inline-block;
