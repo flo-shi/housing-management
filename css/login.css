@@ -69,7 +69,6 @@ input{
 button{
     border-radius:7px ;
     padding: 10px 15px;
-    color: white;
     box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),
     0 17px 50px 0 rgba(0,0,0,0.19);
     border: none;
@@ -97,5 +96,9 @@ button:hover{
 }
 #eye{
     display: none;
+}
+button a{
+    text-decoration: none;
+    color: black;
 }
 
