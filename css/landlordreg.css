@@ -1,18 +1,23 @@
+.show{
+    border: 1px solid red;
+}
 body{
     background: linear-gradient(to right, rgb(248, 200, 216),rgb(208, 162, 250));
 }
-header{
+nav, ul{
+    background-color: rgb(245, 145, 178);
     width: 100%;
     height: 100px;
     display: flex;
     justify-content: space-between;
 }
-.logo{
-    height: 100px;
-    width: 150px;
-}
-header ul{
+nav ul li a{
     text-decoration: none;
     color: rgb(100, 100, 100);
+    font-size: 17px;
     font-weight: 500;
+}
+.logo img{
+    height: 100px;
+    width: 150px;
 }
