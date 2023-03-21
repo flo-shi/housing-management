@@ -24,7 +24,6 @@ ul li{
 }
 ul li a{
     text-decoration: none;
-    /* color: rgb(114, 49, 175); */
     color: rgb(100, 100, 100);
     font-weight: 500;
 }
