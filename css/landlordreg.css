@@ -30,3 +30,38 @@ img{
     width: 170px;
     border-radius: 10px;
 }
+/* Section 1 */
+.sctn-1{
+    margin-top: 50px;
+    margin-left: 70px;
+}
+.login{
+    margin-right: 60%;
+    width: fit-content;
+}
+h3{
+    color: rgb(65, 28, 99);
+    font-size: 30px;
+    font-weight: 600;
+}
+h4{
+    color: rgb(83, 38, 124);
+    font-weight: 200;
+}
+h4 a{
+    color: rgb(236, 27, 97);
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 18px;
+}
+/* Section 1.2 */
+.form{
+    background-color: white;
+    height: 500px;
+    width: 400px;
+    border-radius: 20px;
+    padding: 20px;
+    margin-top: 20px;
+    margin-right: 30px;
+    margin-left: 60%;
+}
