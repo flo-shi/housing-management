@@ -2,7 +2,7 @@
     border: 1px solid red;
 }
 body{
-    background-color:  rgb(242, 197, 247);
+    background-color:  rgb(253, 229, 255);
 }
 /* NAV BAR */
 ul {
@@ -24,8 +24,7 @@ ul li{
 }
 ul li a{
     text-decoration: none;
-    color: rgb(100, 100, 100);
-    font-weight: 500;
+    color: rgb(114, 49, 175) ;
 }
 /* HOUSES */
 .main{
@@ -38,7 +37,7 @@ ul li a{
     margin-right: 20px;
     margin-top: 0;
     margin-bottom: 20px;
-    background-color: rgb(253, 229, 255);
+    background-color: white;
     border-radius: 10px;
     float: right;
 }
@@ -50,28 +49,36 @@ ul li a{
     text-align: center;
 }
 .filter h4{
-    color:  rgb(100, 100, 100);;
+    color:  rgb(92, 41, 139);
     font-size: 20px;
-    font-weight: 500;
-    font-family: sans-serif;;
+    font-weight: 400;  
 }
-.main .filter .price{
+.content{
     width: 300px;
-    height: 250px;
-    margin-top: 10px;
+    height:fit-content;
+    margin-top: 20px;
     margin-left: 10px;
     padding-top: 10px;
     text-align: center;
-    display: grid;
-    color: rgb(100, 100, 100);;
+    display: grid; 
+    justify-content: center; 
+    align-items: center;
+    }
+h5{
+    color: rgb(114, 49, 175);
+    font-weight: 300;
 }
-.main .filter .price button{
+button{
     border-radius: 20px;
     margin-top: 3px;
     width: 200px;
     height: 40px;
-    margin-left: 45px;
     border: 1px;
-    background-color: rgb(238, 228, 228);
+    background-color: white;
     font-weight: 400;
+}
+button:hover{
+    background-color: rgb(243, 206, 218);
+    transform: scale(1.1);
+    transition-duration: 90ms;
 }
