@@ -26,26 +26,70 @@ ul li a{
     text-decoration: none;
     color: rgb(114, 49, 175) ;
 }
-/* HOUSES */
 .main{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
 }
+/* HOUSES */
 .sctn-2{
-    width: 1000px;
+    width: 1050px;
     height: 800px;
     margin-right: 20px;
-    margin-top: 0;
-    margin-bottom: 20px;
+    margin-top: 50px;
+    margin-bottom: 60px;
     background-color: white;
     border-radius: 10px;
-    float: right;
 }
-.filter{
+.page{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+}
+.media{
+    width: 500px;
+    height: 200px;
+    outline: 2px solid rgb(231, 152, 179);
+    border-radius: 5px;
+    margin-top: 40px;
+    margin-left: 10px;
+    display: flex;
+}
+img{
+    width: 200px;
+    height: 200px;
+}
+.media-body{
     width: 300px;
+    margin: 5px;
+}
+.media-body h4{
+    color: rgb(63, 30, 94);
+}
+.location{
+    margin: 5px 0;
+    font-size: 14px;
+    color: blue;
+}
+.icon{
+    margin-bottom: 5px;
+    margin-top: 50px;
+    margin-right: 2px;
+}
+.icon span{
+    margin-right: 2px;
+    margin-left: 2px;
+}
+.paging{
+    width: 100%;
+    height: 45px;
+    margin-top: 20px;
+    
+}
+/* FILTER */
+.filter{
+    width: 250px;
     height: 800px;
     margin-top: 20px;
-    margin-left: 5px;
     text-align: center;
 }
 .filter h4{
@@ -54,10 +98,9 @@ ul li a{
     font-weight: 400;  
 }
 .content{
-    width: 300px;
+    width: 250px;
     height:fit-content;
     margin-top: 20px;
-    margin-left: 10px;
     padding-top: 10px;
     text-align: center;
     display: grid; 
