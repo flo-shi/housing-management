@@ -34,6 +34,7 @@ function showPassword(){
 const pages = document.querySelectorAll('.page');
 const prevButton = document.querySelector('.prev');
 const nextButton = document.querySelector('.next');
+console.log(prevButton)
 let currentPage = 0;
 
 function showPage(pageIndex) {
@@ -53,9 +54,9 @@ function nextPage() {
     showPage(currentPage + 1);
   }
 }
+ 
+prevButton.addEventListener('click', prevPage());
+nextButton.addEventListener('click', nextPage());
 
-prevButton.addEventListener('click', prevPage);
-nextButton.addEventListener('click', nextPage);
-
-showPage(currentPage);
+// showPage(currentPage);
 
