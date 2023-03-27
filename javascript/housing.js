@@ -30,3 +30,32 @@ function showPassword(){
       z.style.display = "block";
    }
 }
+// Paging
+const pages = document.querySelectorAll('.page');
+const prevButton = document.querySelector('.prev');
+const nextButton = document.querySelector('.next');
+let currentPage = 0;
+
+function showPage(pageIndex) {
+  pages[currentPage].classList.remove('active');
+  pages[pageIndex].classList.add('active');
+  currentPage = pageIndex;
+}
+
+function prevPage() {
+  if (currentPage > 0) {
+    showPage(currentPage - 1);
+  }
+}
+
+function nextPage() {
+  if (currentPage < pages.length - 1) {
+    showPage(currentPage + 1);
+  }
+}
+
+prevButton.addEventListener('click', prevPage);
+nextButton.addEventListener('click', nextPage);
+
+showPage(currentPage);
+

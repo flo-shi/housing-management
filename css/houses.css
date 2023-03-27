@@ -40,11 +40,6 @@ ul li a{
     background-color: white;
     border-radius: 10px;
 }
-.page{
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(3, 1fr);
-}
 .media{
     width: 500px;
     height: 200px;
@@ -96,13 +91,24 @@ img{
 .paging div p{
     margin: 0 10px;
 }
-.paging ul{   
-    /* align-items: center;  */
+.pg{
+    height: 45px;
+    margin-bottom: 0;
 }
+.pg li a:hover{
+    color: rgb(236, 27, 97);
+}
+.page.active{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+}
+.page{
+    display: none;
+} 
 .paging ul li{
     display: inline-block;
     margin: 0 10px;
-    /* text-align: center; */
 }
 /* FILTER */
 .filter{
