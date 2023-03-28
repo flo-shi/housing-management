@@ -30,6 +30,26 @@ function showPassword(){
       z.style.display = "block";
    }
 }
+// Password check sign-up page
+function checkPasswordStrength() {
+	var password = document.getElementById("password");
+	var passwordStrength = document.getElementById("password-strength");
+
+	// Reset the password strength indicator
+	passwordStrength.className = "";
+
+	// Check password length
+	if (password.value.length < 6) {
+		passwordStrength.classList.add("weak");
+	} else if (password.value.length < 10) {
+		passwordStrength.classList.add("medium");
+	} else {
+		passwordStrength.classList.add("strong");
+	}
+}
+
+
+
 // Paging
 const pages = document.querySelectorAll('.page');
 const prevButton = document.querySelector('.prev');

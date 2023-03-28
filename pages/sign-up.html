@@ -1,18 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <!-- CSS -->
     <link rel="stylesheet" href="./../css/bootstrap.min.css" />
     <link rel="stylesheet" href="./../css/signup.css" />
+    <!-- fontawsome -->
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
     />
+    <!-- Js -->
+    <script src="./../javascript/jquery.min.js"></script>
+    <script src="./../javascript/housing.js"></script>
     <title>Sign up page</title>
   </head>
   <body>
-    <img class="keys" src="./../image/keys.png" alt="keys" />
     <div class="info">
-      <h3>Signup</h3>
+      <h3>Sign-up</h3>
       <form action="">
         <div class="name">
           <div>
@@ -60,14 +64,17 @@
             <label for="password">Password</label>
             <div class="password">
               <input
+                id="password"
                 class="text"
                 type="password"
                 name="password"
                 placeholder="Enter password:"
+                onkeyup="checkPasswordStrength();"
               />
               <i class="eye fa-regular fa-eye"></i>
               <i class="eye-slash fa-regular fa-eye-slash"></i>
             </div>
+            <div id="password-strength"></div>
           </div>
           <div>
             <label for="confirm password"> Confirm password</label>
