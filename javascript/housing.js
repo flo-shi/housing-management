@@ -34,18 +34,42 @@ function showPassword(){
 function checkPasswordStrength() {
 	var password = document.getElementById("password");
 	var passwordStrength = document.getElementById("password-strength");
+   var specialChars = /[\!\@\#\$\%\^\&\*\(\)\_\+\{\}\:\;\"\"\'\'\<\>\?]/;
+   var upperCaseChars = /[A-Z]/;
+   var numbers = /[0-9]/;
 
 	// Reset the password strength indicator
 	passwordStrength.className = "";
 
-	// Check password length
-	if (password.value.length < 6) {
-		passwordStrength.classList.add("weak");
-	} else if (password.value.length < 10) {
-		passwordStrength.classList.add("medium");
-	} else {
-		passwordStrength.classList.add("strong");
-	}
+// Check password length
+if (specialChars.test(password.value) && numbers.test(password.value) && upperCaseChars.test(password.value)) {
+   passwordStrength.classList.add("strong");
+   passwordStrength.classList.remove("medium");
+} else if (numbers.test(password.value) || upperCaseChars.test(password.value)) {
+   passwordStrength.classList.add("medium");
+   passwordStrength.classList.remove("weak");
+} else {
+      passwordStrength.classList.add("weak");
+   }
+
+//   ******
+	// if (specialChars.test(password.value)) {
+	// 	passwordStrength.classList.add("strong");
+	// }
+
+	// // Check for uppercase letters
+	
+	// if (upperCaseChars.test(password.value)) {
+	// 	passwordStrength.classList.add("medium");
+	// 	passwordStrength.classList.remove("weak");
+	// }
+
+	// // Check for numbers
+	
+	// if (numbers.test(password.value)) {
+	// 	passwordStrength.classList.add("medium");
+	// 	passwordStrength.classList.remove("weak");
+	// }
 }
 
 

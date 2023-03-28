@@ -64,6 +64,7 @@ label{
     border: none;
     border-bottom: 2px solid rgb(82, 51, 10);
     outline: none;
+    width: 250px;
     height: 40px;
     margin-bottom: 8px;
     font-size: 15px;
@@ -79,18 +80,21 @@ button a{
 }
 /* password field */
 #password-strength {
-	height: 10px;
-	margin-top: 10px;
+	height: 8px;
+	margin-top: 8px;
 	border-radius: 5px;
 }
 #password-strength.weak {
 	background-color: #ff0000;
+    width: 100px;
 }
 #password-strength.medium {
 	background-color: #ffa500;
+    width: 150px;
 }
 #password-strength.strong {
 	background-color: #00ff00;
+    width: 200px;
 }
 .eye{
     cursor: pointer;
