@@ -1,5 +1,6 @@
 // javascript
-// Enable
+
+// Show/ hide password
 function showPassword() {
   var passwordInput = document.getElementById("password");
   var eyeIcon = document.getElementById("eye");
