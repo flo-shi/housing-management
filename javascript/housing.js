@@ -13,65 +13,6 @@ $('label').click(function(){
 })
 })
  
-// javascript
-function showPassword(){
-   var x = document.getElementById("password");
-   var x = document.getElementById("eye");
-   var x = document.getElementById("eye-slash");
-
-   if( x.type === 'password'){
-      x.type = "text";
-      y.style.display = "block";
-      z.style.display = "none";
-   }
-   else {
-      x.type = "password";
-      y.style.display = "none";
-      z.style.display = "block";
-   }
-}
-// Password check sign-up page
-function checkPasswordStrength() {
-	var password = document.getElementById("password");
-	var passwordStrength = document.getElementById("password-strength");
-   var specialChars = /[\!\@\#\$\%\^\&\*\(\)\_\+\{\}\:\;\"\"\'\'\<\>\?]/;
-   var upperCaseChars = /[A-Z]/;
-   var numbers = /[0-9]/;
-
-	// Reset the password strength indicator
-	passwordStrength.className = "";
-
-// Check password length
-if (specialChars.test(password.value) && numbers.test(password.value) && upperCaseChars.test(password.value)) {
-   passwordStrength.classList.add("strong");
-   passwordStrength.classList.remove("medium");
-} else if (numbers.test(password.value) || upperCaseChars.test(password.value)) {
-   passwordStrength.classList.add("medium");
-   passwordStrength.classList.remove("weak");
-} else {
-      passwordStrength.classList.add("weak");
-   }
-
-//   ******
-	// if (specialChars.test(password.value)) {
-	// 	passwordStrength.classList.add("strong");
-	// }
-
-	// // Check for uppercase letters
-	
-	// if (upperCaseChars.test(password.value)) {
-	// 	passwordStrength.classList.add("medium");
-	// 	passwordStrength.classList.remove("weak");
-	// }
-
-	// // Check for numbers
-	
-	// if (numbers.test(password.value)) {
-	// 	passwordStrength.classList.add("medium");
-	// 	passwordStrength.classList.remove("weak");
-	// }
-}
-
 
 
 // Paging

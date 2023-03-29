@@ -41,7 +41,7 @@ h3{
     display: block;
 }
 button{
-    background-color: rgb(250, 233, 211);
+    background-color: rgb(250, 233, 211) !important;
     border-radius:7px ;
     padding: 10px 15px;
     color: black;
@@ -96,6 +96,20 @@ button a{
 	background-color: #00ff00;
     width: 200px;
 }
-.eye{
+#message {
+    color: #719ECE;
+  }
+#eye{
+    cursor: pointer;
+}
+#eye-slash {
+    display: none;
+    cursor: pointer;
+  }
+#eye-c-p {
+    cursor: pointer;
+}
+#eye-slash-c-p {
+    display: none;
     cursor: pointer;
 }
