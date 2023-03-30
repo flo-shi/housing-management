@@ -48,6 +48,7 @@ ul li a{
     margin-top: 40px;
     margin-left: 10px;
     display: flex;
+    cursor: pointer;
 }
 img{
     width: 200px;
@@ -153,11 +154,16 @@ button:hover{
 .more-content{
     display: none;
 }
-.media.expand{
+.expand{
     width: 800px;
-    height: 1000px;
+    height: 600px;
+    position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    background-color: rgb(243, 206, 218);
+    background-color: rgb(240, 237, 243);
+    margin-bottom: 10px;
 }
+.blurred {
+    filter: blur(3px);
+  }

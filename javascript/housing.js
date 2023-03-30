@@ -14,10 +14,18 @@ $("document").ready(function () {
 
 // expand
 var media = document.querySelectorAll(".media");
+var background = document.getElementsByTagName("body")[0];
+var moreContent = document.getElementsByClassName("more-content");
+
 function expandContent() {
-  media.classList.add("expand");
+  this.classList.add("expand");
+  this.background.classList.add("blurred");
+  this.moreContent.style.display = "block";
 }
-media.addEventListener("click", expandContent());
+
+for (var i = 0; i < media.length; i++) {
+  media[i].addEventListener("click", expandContent);
+}
 
 // Paging
 // const pages = document.querySelectorAll(".page");
