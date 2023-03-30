@@ -67,7 +67,6 @@ img{
 }
 .icon{
     margin-bottom: 5px;
-    margin-top: 50px;
     margin-right: 2px;
 }
 .icon span{
@@ -149,4 +148,16 @@ button:hover{
     background-color: rgb(243, 206, 218);
     transform: scale(1.1);
     transition-duration: 90ms;
+}
+/* hidden content */
+.more-content{
+    display: none;
+}
+.media.expand{
+    width: 800px;
+    height: 1000px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgb(243, 206, 218);
 }
