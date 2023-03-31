@@ -50,7 +50,6 @@ a{
     width: 350px;
     height: 380px;
     border: 1px solid grey;
-    margin-left: 250px;
 }
 .topic{
     display: block;
@@ -58,7 +57,7 @@ a{
     height: 40px;
     background-color: rgb(47, 255, 193);
     color: black;
-    padding: 10px 30px;
+    padding: 7px 30px;
     text-align: center;
 }
 .content form{
@@ -82,8 +81,8 @@ input{
 button{
     background-color: rgb(47, 255, 193);
     width: 100px;
-    margin-top: 10px;
-    margin-left: 95px;
+    margin-top: 20px;
+    margin-left: 100px;
     margin-bottom: 15px;
     padding: 5px 20px;
     border-radius: 5px;

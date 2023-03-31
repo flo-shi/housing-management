@@ -30,6 +30,11 @@ ul li a{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
 }
+.map{
+    width: 350px;
+    height: 60px;
+    margin-top: 25px;
+}
 /* HOUSES */
 .sctn-2{
     width: 1050px;

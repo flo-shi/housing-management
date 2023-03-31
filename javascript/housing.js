@@ -19,8 +19,8 @@ var moreContent = document.getElementsByClassName("more-content");
 
 function expandContent() {
   this.classList.toggle("expand");
-  this.background.classList.toggle("blurred");
-  moreContent.style.display = "block";
+  this.background.classList.add("blurred");
+  moreContent.style.display = "inline";
 }
 
 for (var i = 0; i < media.length; i++) {
