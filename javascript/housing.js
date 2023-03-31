@@ -18,6 +18,7 @@ var background = document.getElementsByTagName("body")[0];
 var moreContent = document.getElementsByClassName("more-content");
 
 function expandContent() {
+  return;
   this.classList.toggle("expand");
   this.background.classList.add("blurred");
   moreContent.style.display = "inline";
