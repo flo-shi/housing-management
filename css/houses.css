@@ -155,7 +155,7 @@ button:hover{
     display: none;
 }
 .expand{
-    width: 800px;
+    width: 600px;
     height: 600px;
     position: absolute;
     top: 50%;
@@ -165,5 +165,5 @@ button:hover{
     margin-bottom: 10px;
 }
 .blurred {
-    filter: blur(3px);
+    opacity: 1;
   }

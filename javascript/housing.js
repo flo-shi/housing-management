@@ -18,9 +18,9 @@ var background = document.getElementsByTagName("body")[0];
 var moreContent = document.getElementsByClassName("more-content");
 
 function expandContent() {
-  this.classList.add("expand");
-  this.background.classList.add("blurred");
-  this.moreContent.style.display = "block";
+  this.classList.toggle("expand");
+  this.background.classList.toggle("blurred");
+  moreContent.style.display = "block";
 }
 
 for (var i = 0; i < media.length; i++) {
