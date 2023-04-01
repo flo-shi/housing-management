@@ -13,19 +13,19 @@ $("document").ready(function () {
 });
 
 // expand
-var media = document.querySelectorAll(".media");
-var background = document.getElementsByTagName("body")[0];
-var moreContent = document.getElementsByClassName("more-content");
+// var media = document.querySelectorAll(".media");
+// var background = document.getElementsByTagName("body")[0];
+// var moreContent = document.getElementsByClassName("more-content");
 
-function expandContent() {
-  this.classList.toggle("expand");
-  this.background.classList.add("blurred");
-  moreContent.style.display = "inline";
-}
+// function expandContent() {
+//   this.classList.toggle("expand");
+//   this.background.classList.add("blurred");
+//   moreContent.style.display = "inline";
+// }
 
-for (var i = 0; i < media.length; i++) {
-  media[i].addEventListener("click", expandContent);
-}
+// for (var i = 0; i < media.length; i++) {
+//   media[i].addEventListener("click", expandContent);
+// }
 
 // Paging
 // const pages = document.querySelectorAll(".page");
