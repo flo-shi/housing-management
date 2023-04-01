@@ -1,106 +1,125 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport"
-              content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-        <meta http-equiv="X-UA-Compatible" content="ie=edge">
-        <link rel="stylesheet" href="./../css/bootstrap.min.css" />
-<!--        <link rel="stylesheet" href="./../css/font-awesome.css">-->
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"/>
-        <link rel="stylesheet" href="styles/admin.css">
-        <title>Admin</title>
-    </head>
-    <body class="bg-pink">
-            <!--
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+    />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="./../css/bootstrap.min.css" />
+    <!--        <link rel="stylesheet" href="./../css/font-awesome.css">-->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="styles/admin.css" />
+    <title>Admin</title>
+  </head>
+  <body class="bg-pink">
+    <!--
             ===================================
              This is the header section
             ===================================
             -->
-        <header id="header-section" class="bg-pink">
-            <!--  Logo image  -->
-            <img class="logo" src="./../image/tenalord-logo.png">
+    <header id="header-section" class="bg-pink">
+      <!--  Logo image  -->
+      <img class="logo" src="./../image/tenalord-logo.png" />
 
-            <!-- Nav section -->
-            <nav class="navbar navbar-expand-sm">
+      <!-- Nav section -->
+      <nav class="navbar navbar-expand-sm">
+        <div class="container-fluid">
+          <!-- Links -->
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <h2 class="nav-link fs-3">
+                <b>Tenalord Admin</b>
+              </h2>
+            </li>
+          </ul>
 
-                <div class="container-fluid">
-                    <!-- Links -->
-                    <ul class="navbar-nav">
-                        <li class="nav-item">
-                            <h2 class="nav-link fs-3">
-                                <b>Tenalord Admin</b>
-                            </h2>
-                        </li>
-                    </ul>
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <div class="dropdown">
+                <ul
+                  class="d-flex dropdown-toggle text-end"
+                  data-bs-toggle="dropdown"
+                >
+                  <li>
+                    <div class="fs-4"><b>Florence</b></div>
+                    <div class="fs-6"><b>flo@gmail.com</b></div>
+                  </li>
+                  <li>
+                    <div class="m-1">
+                      <img
+                        class="radius-50"
+                        src="./../image/houses.png"
+                        width="60"
+                        height="60"
+                        alt=""
+                      />
+                    </div>
+                  </li>
+                </ul>
+                <ul class="dropdown-menu">
+                  <li>
+                    <a class="dropdown-item" href="./../">
+                      <i class="fa fa-logout"></i> Logout</a
+                    >
+                  </li>
+                </ul>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
 
-                    <ul class="navbar-nav">
-                        <li class="nav-item">
-                            <div class="dropdown">
-                                <ul class="d-flex  dropdown-toggle text-end" data-bs-toggle="dropdown">
-                                    <li>
-                                        <div class="fs-4"><b>Flombient</b></div>
-                                        <div class="fs-6"><b>flomient@gmail.com</b></div>
-                                    </li>
-                                    <li>
-                                        <div class="m-1">
-                                            <img class="radius-50" src="./../image/houses.png" width="60" height="60" alt="">
-                                        </div>
-                                    </li>
-                                </ul>
-                                <ul class="dropdown-menu">
-                                    <li><a class="dropdown-item" href="./../"> <i class="fa fa-logout"></i> Logout</a></li>
-                                    <li><a class="dropdown-item" href="./../"> <i class="fa fa-logout"></i> Logout</a></li>
-                                    <li><a class="dropdown-item" href="./../"> <i class="fa fa-logout"></i> Logout</a></li>
-                                </ul>
-                            </div>
-                        </li>
-                    </ul>
-                </div>
-
-            </nav>
-        </header>
-
-        <!--
+    <!--
         ===================================
          This is the aside section
         ===================================
         -->
-        <aside id="menu-section" class="bg-pink p-10">
-            <div class="content">
-                <h5></h5>
-                <button class="link" onclick="loadDashboard()">Dashboard</button>
-                <button class="link" onclick="loadUsers()"> Users <!-- landlord/agent --></button>
-                <button class="link" onclick="loadProperty()"> Properties <!-- rentals --></button>
-                <button class="link" onclick="loadCustomerRequests()"> Customer Requests </button>
-<!--            <button class="link">40,001 - and above</button>-->
-<!--            <button class="link">40,001 - and above</button>-->
-<!--            <button class="link">40,001 - and above</button>-->
-<!--            <button class="link">40,001 - and above</button>-->
-<!--            <button class="link">40,001 - and above</button>-->
-<!--            <button class="link">40,001 - and above</button>-->
-<!--            <button class="link">40,001 - and above</button>-->
-<!--            <button class="link">40,001 - and above</button>-->
-            </div>
-        </aside>
-        <!--
+    <aside id="menu-section" class="bg-pink p-10">
+      <div class="content">
+        <h5></h5>
+        <button class="link" onclick="loadDashboard()">Dashboard</button>
+        <button class="link" onclick="loadUsers()">
+          Users
+          <!-- landlord/agent -->
+        </button>
+        <button class="link" onclick="loadProperty()">
+          Properties
+          <!-- rentals -->
+        </button>
+        <button class="link" onclick="loadCustomerRequests()">
+          Customer Requests
+        </button>
+        <!--            <button class="link">40,001 - and above</button>-->
+        <!--            <button class="link">40,001 - and above</button>-->
+        <!--            <button class="link">40,001 - and above</button>-->
+        <!--            <button class="link">40,001 - and above</button>-->
+        <!--            <button class="link">40,001 - and above</button>-->
+        <!--            <button class="link">40,001 - and above</button>-->
+        <!--            <button class="link">40,001 - and above</button>-->
+        <!--            <button class="link">40,001 - and above</button>-->
+      </div>
+    </aside>
+    <!--
         ===================================
         This is the Main Content section
         ===================================
         -->
-        <section id="main-section" class="content bg-white">
-            <span class="fs-2">
-                loading....
-            </span>
-        </section>
+    <section id="main-section" class="content bg-white">
+      <span class="fs-2"> loading.... </span>
+    </section>
 
-            <script src="./../javascript/jquery.min.js"></script>
-            <script src="./../javascript/bootstrap.min.js"></script>
-            <script src="./../javascript/bootstrap.bundle.min.js"></script>
-            <script src="./scripts/admin-navigation.js"></script>
-<!--            <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>-->
-<!--            <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>-->
-<!--            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>-->
-
-    </body>
+    <script src="./../javascript/jquery.min.js"></script>
+    <script src="./../javascript/bootstrap.min.js"></script>
+    <script src="./../javascript/bootstrap.bundle.min.js"></script>
+    <script src="./scripts/admin-navigation.js"></script>
+    <!--            <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>-->
+    <!--            <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>-->
+    <!--            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>-->
+  </body>
 </html>
