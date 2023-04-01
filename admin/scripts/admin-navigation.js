@@ -1,9 +1,9 @@
 $(document).ready(function(){
-    loadDashboard()
+    loadDashboard();
 });
 
 function loadDashboard(){
-    $('#main-section').load('widgets/dashboard.html')
+    $('#main-section').load('widgets/dashboard.html');
 }
 
 function loadUsers(){
