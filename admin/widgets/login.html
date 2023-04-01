@@ -1,0 +1,35 @@
+<div class="info">
+    <h3>Log in</h3>
+    <form onsubmit="login(event)">
+        <label for="email">Email</label> <br />
+        <input
+                class="text"
+                type="email"
+                name="email"
+                id="email"
+                placeholder="Enter Email"
+                required
+        />
+        <br />
+        <label for="password" class=""> Password</label> <br />
+        <div class="password">
+            <input
+                    class="text"
+                    id="password"
+                    type="password"
+                    name="password"
+                    placeholder="Enter Password"
+                    required
+            />
+            <span class="hide">
+            <i id="eye" class="fa-regular fa-eye"></i>
+            <i id="eye-slash" class="fa-regular fa-eye-slash"></i>
+          </span>
+        </div>
+        <button id="submit-btn" class="btn btn-default">Get Started</button>
+    </form>
+    <div class="reg">
+        <a class="text-decoration-underline text-primary pointer" onclick="loadForgotPassword()">Forgot password?</a> <br />
+<!--        <a href="#">Don't have an account?</a>-->
+    </div>
+</div>

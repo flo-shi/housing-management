@@ -65,8 +65,9 @@
       </section>
       <!-- HOUSES -->
       <section class="sctn-2">
+        <h3 class="mt-3 ms-3 mb-1">Available houses</h3>
         <div class="page active" id="page1">
-          <div class="media">
+          <div class="media" data-bs-toggle="modal" data-bs-target="#myModal">
             <div class="media-left">
               <img
                 src="./../image/house/Screenshot 2023-03-26 213213.png"
@@ -919,6 +920,57 @@
           </ul>
         </div>
       </section>
+
+      <!--
+      ==========================================
+        Modal display more items
+      ==========================================
+      -->
+      <div class="modal" id="myModal">
+        <div class="modal-dialog modal-lg">
+          <div class="modal-content">
+
+            <div class="modal-body p-0">
+
+              <div class="card modal-card">
+                <img class="card-img-top"
+                     src="./../image/house/Screenshot 2023-03-26 215240.png"
+                     alt="Card image" >
+                <div class="card-body">
+                  <button class="btn btn-default btn-close-modal" data-bs-dismiss="modal">
+                    <i class="fa fa-times"></i>
+                  </button>
+                  <h4 class="card-title">KSh 45,000.00</h4>
+                  <h6>
+                    <span class="bedroom">49</span> bedroom apartment/ Flat to rent
+                    in<span class="city"></span>
+                  </h6>
+                  <p class="location">..location</p>
+                  <p class="card-text">
+                    Spacious room Constant water supply Quiet neigborhood...<span
+                          class="more-content-"
+                  >Tight security Small distance to the main road Good lighting
+                  Contact for more info</span
+                  >
+                  </p>
+                  <div class="icon">
+                    <i class="fa-solid fa-bed "><span>2</span></i>
+                    <i class="fa-solid fa-bath "><span>2</span></i>
+
+                    <div class="icon-right">
+                      <i class="fa fa-heart "></i>
+                      <i class="fa fa-heart-circle-check "></i>
+                    </div>
+                  </div>
+                </div>
+            </div>
+
+
+          </div>
+        </div>
+      </div>
+
+
     </div>
     <!-- Script -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
