@@ -1,0 +1,120 @@
+<div class="container">
+    <div class="row">
+        <div class="col-sm-12">
+            <div class="fs-3 my-3 fw-bold">
+                Users
+                <button onclick="adminLoadAddUser()" class="btn btn-sm float-end mt-2 btn-outline-primary pull-left">
+                    Add User
+                </button>
+            </div>
+            <div class="table-responsive">
+                <table class="table table-bordered table-hover table-striped">
+                    <thead>
+                    <tr>
+                        <th>#</th>
+                        <th>Name</th>
+                        <th>Email</th>
+                        <th>Phone</th>
+                        <th>Level</th>
+                        <td>Action</td>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>John Doe</td>
+                        <td>John@doe.com</td>
+                        <td>0704219247</td>
+                        <td>
+                            <span class="badge bg-success">
+                                Agent
+                            </span>
+                        </td>
+                        <td>
+                            <button onclick="adminLoadEditUser(event)" class="btn btn-sm btn-outline-success">
+                                Edit
+                            </button>
+                            <button onclick="deleteUser(event)" class="btn btn-sm btn-outline-danger">
+                                Delete
+                            </button>
+                        </td>
+                    </tr> <tr>
+                        <td>1</td>
+                        <td>John Doe</td>
+                        <td>John@doe.com</td>
+                        <td>0704219247</td>
+                        <td>
+                            <span class="badge bg-success">
+                                Agent
+                            </span>
+                        </td>
+                        <td>
+                            <button onclick="adminLoadEditUser(event)" class="btn btn-sm btn-outline-success">
+                                Edit
+                            </button>
+                            <button onclick="deleteUser(event)" class="btn btn-sm btn-outline-danger">
+                                Delete
+                            </button>
+                        </td>
+                    </tr> <tr>
+                        <td>1</td>
+                        <td>John Doe</td>
+                        <td>John@doe.com</td>
+                        <td>0704219247</td>
+                        <td>
+                            <span class="badge bg-success">
+                                Agent
+                            </span>
+                        </td>
+                        <td>
+                            <button onclick="adminLoadEditUser(event)" class="btn btn-sm btn-outline-success">
+                                Edit
+                            </button>
+                            <button onclick="deleteUser(event)" class="btn btn-sm btn-outline-danger">
+                                Delete
+                            </button>
+                        </td>
+                    </tr> <tr>
+                        <td>1</td>
+                        <td>John Doe</td>
+                        <td>John@doe.com</td>
+                        <td>0704219247</td>
+                        <td>
+                            <span class="badge bg-success">
+                                Agent
+                            </span>
+                        </td>
+                        <td>
+                            <button onclick="adminLoadEditUser(event)" class="btn btn-sm btn-outline-success">
+                                Edit
+                            </button>
+                            <button onclick="deleteUser(event)" class="btn btn-sm btn-outline-danger">
+                                Delete
+                            </button>
+                        </td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <!--
+            ===========
+            pagination
+            ===========
+            margin-top
+            -->
+            <ul class="pagination justify-content-end">
+                <li class="page-item me-2">
+                    <a class="btn page-link" href="#">
+                        <span class="fw-bold">&laquo;</span> Previous
+                    </a>
+                </li>
+                <li class="page-item ms-2">
+                    <a class="btn page-link" href="#">
+                        Next <span class="fw-bold">&raquo;</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>

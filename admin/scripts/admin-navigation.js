@@ -1,5 +1,6 @@
 $(document).ready(function(){
-    loadDashboard();
+    // loadDashboard();
+    loadUsers();
 });
 
 function loadDashboard(){
@@ -7,7 +8,7 @@ function loadDashboard(){
 }
 
 function loadUsers(){
-    $('#main-section').load('widgets/users.html');
+    $('#main-section').load('widgets/users/users.html');
 }
 
 function loadProperty(){
@@ -16,4 +17,12 @@ function loadProperty(){
 
 function loadCustomerRequests(){
     $('#main-section').load('widgets/customer-requests.html');
+}
+
+function adminLoadAddUser(){
+    $('#main-section').load('widgets/users/admin-add-user.html');
+}
+
+function adminLoadEditUser(){
+    $('#main-section').load('widgets/users/admin-edit-user.html');
 }
