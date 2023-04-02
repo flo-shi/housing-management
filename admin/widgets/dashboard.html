@@ -1,5 +1,55 @@
-<div class="row">
-  <div class="col-sm-4">
-    I am dashboard section
+<head>
+  <link rel="stylesheet" href="./../../css/bootstrap.min.css" />
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+  />
+  <style>
+    .dsh-content {
+      margin: 50px;
+      display: flex;
+    }
+    .dsh-content button {
+      width: 250px;
+      height: 50px;
+      background-color: rgb(253, 229, 255);
+      color: rgb(63, 30, 94);
+      font-size: 20px;
+      margin-right: 50px;
+    }
+    .dropdown-content {
+      display: none;
+      width: 250px;
+      text-align: center;
+      border: 1px solid rgb(207, 206, 206);
+      margin-right: 50px;
+    }
+    a {
+      display: block;
+      height: 40px;
+      color: rgb(63, 30, 94);
+      font-size: 20px;
+    }
+    .dropdown:hover .dropdown-content {
+      display: block;
+    }
+  </style>
+</head>
+<body>
+  <h2 style="color: rgb(63, 30, 94)">Welcome Florence.</h2>
+  <div class="dsh-content">
+    <!-- first button -->
+    <div class="dropdown">
+      <button onclick="loadUsers()">Users</button>
+      <!-- <div class="dropdown-content">
+        <a href="">Landlord/Agent</a>
+        <a href="">Customer</a>
+      </div> -->
+    </div>
+    <!-- second button -->
+    <button onclick="loadProperty()">Property</button>
+    <!-- third btn -->
+    <button onclick="loadCustomerRequests()">Customer request</button>
   </div>
-</div>
+  <script src="./../scripts/admin-navigation.js"></script>
+</body>
