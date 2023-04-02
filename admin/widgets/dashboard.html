@@ -40,16 +40,63 @@
   <div class="dsh-content">
     <!-- first button -->
     <div class="dropdown">
-      <button onclick="loadUsers()">Users</button>
+      <button onclick="loadUsers()">
+        <span>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            fill="currentColor"
+            class="bi bi-people-fill"
+            viewBox="0 0 16 16"
+          >
+            <path
+              d="M7 14s-1 0-1-1 1-4 5-4 5 3 5 4-1 1-1 1H7Zm4-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6Zm-5.784 6A2.238 2.238 0 0 1 5 13c0-1.355.68-2.75 1.936-3.72A6.325 6.325 0 0 0 5 9c-4 0-5 3-5 4s1 1 1 1h4.216ZM4.5 8a2.5 2.5 0 1 0 0-5 2.5 2.5 0 0 0 0 5Z"
+            />
+          </svg>
+        </span>
+        Users
+      </button>
       <!-- <div class="dropdown-content">
         <a href="">Landlord/Agent</a>
         <a href="">Customer</a>
       </div> -->
     </div>
     <!-- second button -->
-    <button onclick="loadProperty()">Property</button>
+    <button onclick="loadProperty()">
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        width="24"
+        height="24"
+        fill="currentColor"
+        class="bi bi-houses-fill"
+        viewBox="0 0 16 16"
+      >
+        <path
+          d="M7.207 1a1 1 0 0 0-1.414 0L.146 6.646a.5.5 0 0 0 .708.708L1 7.207V12.5A1.5 1.5 0 0 0 2.5 14h.55a2.51 2.51 0 0 1-.05-.5V9.415a1.5 1.5 0 0 1-.56-2.475l5.353-5.354L7.207 1Z"
+        />
+        <path
+          d="M8.793 2a1 1 0 0 1 1.414 0L12 3.793V2.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v3.293l1.854 1.853a.5.5 0 0 1-.708.708L15 8.207V13.5a1.5 1.5 0 0 1-1.5 1.5h-8A1.5 1.5 0 0 1 4 13.5V8.207l-.146.147a.5.5 0 1 1-.708-.708L8.793 2Z"
+        />
+      </svg>
+      Property
+    </button>
     <!-- third btn -->
-    <button onclick="loadCustomerRequests()">Customer request</button>
+    <button onclick="loadCustomerRequests()">
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        width="24"
+        height="24"
+        fill="currentColor"
+        class="bi bi-chat-square-heart-fill"
+        viewBox="0 0 16 16"
+      >
+        <path
+          d="M2 0a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h2.5a1 1 0 0 1 .8.4l1.9 2.533a1 1 0 0 0 1.6 0l1.9-2.533a1 1 0 0 1 .8-.4H14a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2Zm6 3.993c1.664-1.711 5.825 1.283 0 5.132-5.825-3.85-1.664-6.843 0-5.132Z"
+        />
+      </svg>
+      Customer request
+    </button>
   </div>
   <script src="./../scripts/admin-navigation.js"></script>
 </body>
