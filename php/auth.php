@@ -47,8 +47,8 @@ function signUp($uf_name, $ul_name, $u_email, $u_number, $password){
     `u_number`,
     `u_level`,
     `password`
-)
-VALUES('".$uf_name."', '".$ul_name."', '".$u_email."', '".$u_number."', '".$u_level."', '".$hashedPassword."')";
+ )
+ VALUES('".$uf_name."', '".$ul_name."', '".$u_email."', '".$u_number."', '".$u_level."', '".$hashedPassword."')";
 
 
     //check if user email exists

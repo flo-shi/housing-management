@@ -1,53 +1,56 @@
 <div class="container">
-    <div class="row">
-        <div class="col-sm-12">
-            <div class="fs-3 my-3 fw-bold">
-                Edit User
-                <button onclick="loadUsers()" class="btn btn-sm float-end mt-2 btn-outline-primary pull-left">
-                    View Users
-                </button>
-            </div>
+  <div class="row">
+    <div class="col-sm-12">
+      <div class="fs-3 my-3 fw-bold">
+        Edit User
+        <button
+          onclick="loadUsers()"
+          class="btn btn-sm float-end mt-2 btn-outline-primary pull-left"
+        >
+          View Users
+        </button>
+      </div>
 
-            <div>
-                <form onsubmit="editUser(event)" class="row">
-                    <div class="form-group mb-3 col-sm-6">
-                        <label class="form-label">First Name</label>
-                        <input type="text" required class="form-control">
-                    </div>
-                    <div class="form-group mb-3 col-sm-6">
-                        <label class="form-label">Last Name</label>
-                        <input type="text" required class="form-control">
-                    </div>
+      <div>
+        <form onsubmit="editUser(event)" class="row">
+          <div class="form-group mb-3 col-sm-6">
+            <label class="form-label">First Name</label>
+            <input type="text" required class="form-control" />
+          </div>
+          <div class="form-group mb-3 col-sm-6">
+            <label class="form-label">Last Name</label>
+            <input type="text" required class="form-control" />
+          </div>
 
-                    <div class="form-group mb-3 col-sm-6">
-                        <label class="form-label">Email</label>
-                        <input type="text" required class="form-control">
-                    </div>
+          <div class="form-group mb-3 col-sm-6">
+            <label class="form-label">Email</label>
+            <input type="text" required class="form-control" />
+          </div>
 
-                    <div class="form-group mb-3 col-sm-6">
-                        <label class="form-label">Phone</label>
-                        <input type="text" required class="form-control">
-                    </div>
+          <div class="form-group mb-3 col-sm-6">
+            <label class="form-label">Phone</label>
+            <input type="text" required class="form-control" />
+          </div>
 
-                    <div class="form-group text-capitalize mb-3 col-sm-12">
-                        <label class="form-label">Level</label>
-                        <select name="" id="" required class="form-control">
-                            <option value="">elect level</option>
-                            <option>admin</option>
-                            <option>agent</option>
-                            <option>client</option>
-                            <option>landlord</option>
-                        </select>
-                    </div>
+          <div class="form-group text-capitalize mb-3 col-sm-12">
+            <label class="form-label">Level</label>
+            <select name="" id="" required class="form-control">
+              <option value="">Select level</option>
+              <option>admin</option>
+              <option>agent</option>
+              <option>client</option>
+              <option>landlord</option>
+            </select>
+          </div>
 
-                    <div class="form-group text-end">
-                        <button class="btn btn-sm btn-success">
-                           <span class="fw-bold">&plus;</span>
-                            Update User
-                        </button>
-                    </div>
-                </form>
-            </div>
-        </div>
+          <div class="form-group text-end">
+            <button class="btn btn-sm btn-success">
+              <span class="fw-bold">&plus;</span>
+              Update User
+            </button>
+          </div>
+        </form>
+      </div>
     </div>
+  </div>
 </div>
