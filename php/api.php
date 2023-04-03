@@ -2,13 +2,11 @@
 include("./connect.php");
 include("./auth.php");
 
-
-
 //enable route api
 // all ajax requests should have type configured
 if ( isset($_GET['flombient']) === true) {
 
-    $requestType = $_GET['type'];
+    $requestType = $_GET['flombient'];
 
     //request sign-up
     if ($requestType == 'sign-up') {
@@ -23,9 +21,10 @@ if ( isset($_GET['flombient']) === true) {
 
     //request login
     if($requestType == 'login'){
-        $email = "kania@gmail.com";
-        $password = 'mgobero';
-
+        $email = $_POST['email'];
+        $password = $_POST['password'];
+//        $hashedPassword =password_hash($password, PASSWORD_DEFAULT);
+//        echo $hashedPassword;
         login($email, $password);
     }
 
