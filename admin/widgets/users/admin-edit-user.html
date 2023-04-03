@@ -12,7 +12,8 @@
       </div>
 
       <div>
-        <form onsubmit="editUser(event)" class="row">
+        <form id="edit-user" onsubmit="editUser(event)" class="row">
+          <input class="form-control" hidden>
           <div class="form-group mb-3 col-sm-6">
             <label class="form-label">First Name</label>
             <input type="text" required class="form-control" />

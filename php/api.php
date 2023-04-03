@@ -1,6 +1,7 @@
 <?php
-include("./connect.php");
-include("./auth.php");
+include("./functions.php");
+
+
 
 //enable route api
 // all ajax requests should have type configured
@@ -27,7 +28,58 @@ if ( isset($_GET['flombient']) === true) {
 //        echo $hashedPassword;
         login($email, $password);
     }
+    //get logged in user
+    if($requestType == 'loggedInUser'){
+        getLoggedInUser();
+    }
 
+    //get dashboard data
+    if($requestType == 'dashboardData'){
+        getDashboardData();
+    }
+
+    //get all users
+    if($requestType == 'getAllUsers'){
+        getAllUsers();
+    }
+
+    //get user by id
+    if($requestType == 'getSingeUser'){
+        $uid = $_GET['uid'];
+        getSingeUser($uid);
+    }
+
+    //delete user
+    if($requestType == 'deleteUser'){
+        $uid = $_GET['uid'];
+        deleteSingleUser($uid);
+    }
+
+    //add user
+    if($requestType == 'addUser'){
+        $uf_name = $_POST['uf_name'];
+        $ul_name = $_POST['ul_name'];
+        $u_email = $_POST['u_email'];
+        $u_number = $_POST['u_number'];
+        $u_level = $_POST['u_level'];
+
+        addUser($uf_name, $ul_name, $u_email, $u_number,$u_level);
+    }
+
+    //update user
+    if($requestType == 'updateUser'){
+        $uid = $_POST['uid'];
+        $uf_name = $_POST['uf_name'];
+        $ul_name = $_POST['ul_name'];
+        $u_email = $_POST['u_email'];
+        $u_number = $_POST['u_number'];
+        $u_level = $_POST['u_level'];
+
+        updateUser($uid,$uf_name, $ul_name, $u_email, $u_number,$u_level);
+    }
+//    ===========================================
+//    Bed sitters has 0 p_beds value
+//    ===========================================
 }
 /**
  * .get => return, 2 packets $_GET['users']

@@ -1,14 +1,6 @@
 function login(event){
     event.preventDefault();
-
     let url = "http://localhost/housing-management/php/api.php?flombient=login";
-   /* let url = "http://localhost/housing-management/php/api.php?flombient=login";
-    let url = "http://localhost/housing-management/php/api.php?type=sign-up";
-    let url = "http://localhost/housing-management/php/api.php?type=add-user";
-    let url = "http://localhost/housing-management/php/api.php?type=edit-user";
-    let url = "http://localhost/housing-management/php/api.php?type=delete-user";
-    let url = "http://localhost/housing-management/php/api.php?type=update-user";
-    let url = "http://localhost/housing-management/php/api.php?type=get-users";*/
 
     let inputs = document.querySelectorAll('#loginForm input');
     /*$('#loginForm input');*/
@@ -21,11 +13,8 @@ function login(event){
         password: password
     };
 
-    $.post(url,loginData,function (data,status){
-        console.log(data)
+    $.post(url,loginData,function (data){
+        //response from backend
+        document.location.href = "admin.html"
     });
-
-    // setTimeout(function () {
-    //     document.location.href = "admin.html"
-    // },300)
 }

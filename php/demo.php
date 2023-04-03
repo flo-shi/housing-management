@@ -48,6 +48,11 @@ if ($conn->connect_error) {
     echo "Connected successfully!";
 }
 
+session_start();
+$_SESSION['sample'] = "Kevo";
+echo "<br>";
+echo $_SESSION['tenalord']."Sample";
+die();
 echo "<br>Welcome<br>";
 
 $sql ="SELECT `uid`, `uf_name`, `ul_name`, `u_email`, `u_number`, `u_level` FROM `users` ";

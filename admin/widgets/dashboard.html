@@ -10,8 +10,9 @@
       display: flex;
     }
     .dsh-content button {
-      width: 250px;
-      height: 50px;
+      width: 100%;
+      min-height: 120px;
+      border-radius: 5px;
       background-color: rgb(253, 229, 255);
       color: rgb(63, 30, 94);
       font-size: 20px;
@@ -36,10 +37,9 @@
   </style>
 </head>
 <body>
-  <h2 style="color: rgb(63, 30, 94)">Welcome Florence.</h2>
+<h2 style="color: rgb(63, 30, 94)">Welcome <span id="welcome-user"></span>.</h2>
   <div class="dsh-content">
     <!-- first button -->
-    <div class="dropdown">
       <button onclick="loadUsers()">
         <span>
           <svg
@@ -55,48 +55,46 @@
             />
           </svg>
         </span>
-        Users
+        Users <br><span id="users"></span>
       </button>
       <!-- <div class="dropdown-content">
         <a href="">Landlord/Agent</a>
         <a href="">Customer</a>
       </div> -->
-    </div>
-    <!-- second button -->
     <button onclick="loadProperty()">
       <svg
-        xmlns="http://www.w3.org/2000/svg"
-        width="24"
-        height="24"
-        fill="currentColor"
-        class="bi bi-houses-fill"
-        viewBox="0 0 16 16"
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              fill="currentColor"
+              class="bi bi-houses-fill"
+              viewBox="0 0 16 16"
       >
         <path
-          d="M7.207 1a1 1 0 0 0-1.414 0L.146 6.646a.5.5 0 0 0 .708.708L1 7.207V12.5A1.5 1.5 0 0 0 2.5 14h.55a2.51 2.51 0 0 1-.05-.5V9.415a1.5 1.5 0 0 1-.56-2.475l5.353-5.354L7.207 1Z"
+                d="M7.207 1a1 1 0 0 0-1.414 0L.146 6.646a.5.5 0 0 0 .708.708L1 7.207V12.5A1.5 1.5 0 0 0 2.5 14h.55a2.51 2.51 0 0 1-.05-.5V9.415a1.5 1.5 0 0 1-.56-2.475l5.353-5.354L7.207 1Z"
         />
         <path
-          d="M8.793 2a1 1 0 0 1 1.414 0L12 3.793V2.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v3.293l1.854 1.853a.5.5 0 0 1-.708.708L15 8.207V13.5a1.5 1.5 0 0 1-1.5 1.5h-8A1.5 1.5 0 0 1 4 13.5V8.207l-.146.147a.5.5 0 1 1-.708-.708L8.793 2Z"
+                d="M8.793 2a1 1 0 0 1 1.414 0L12 3.793V2.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v3.293l1.854 1.853a.5.5 0 0 1-.708.708L15 8.207V13.5a1.5 1.5 0 0 1-1.5 1.5h-8A1.5 1.5 0 0 1 4 13.5V8.207l-.146.147a.5.5 0 1 1-.708-.708L8.793 2Z"
         />
       </svg>
-      Property
+      Properties <br><span id="properties"></span>
     </button>
     <!-- third btn -->
     <button onclick="loadCustomerRequests()">
-      <svg
-        xmlns="http://www.w3.org/2000/svg"
-        width="24"
-        height="24"
-        fill="currentColor"
-        class="bi bi-chat-square-heart-fill"
-        viewBox="0 0 16 16"
-      >
-        <path
-          d="M2 0a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h2.5a1 1 0 0 1 .8.4l1.9 2.533a1 1 0 0 0 1.6 0l1.9-2.533a1 1 0 0 1 .8-.4H14a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2Zm6 3.993c1.664-1.711 5.825 1.283 0 5.132-5.825-3.85-1.664-6.843 0-5.132Z"
+      <svg xmlns="http://www.w3.org/2000/svg"
+           width="24"
+           height="24"
+           fill="currentColor"
+           class="bi bi-chat-square-heart-fill"
+           viewBox="0 0 16 16">
+        <path d="M2 0a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h2.5a1 1 0 0 1 .8.4l1.9 2.533a1 1 0 0 0 1.6 0l1.9-2.533a1 1 0 0 1 .8-.4H14a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2Zm6 3.993c1.664-1.711 5.825 1.283 0 5.132-5.825-3.85-1.664-6.843 0-5.132Z"
         />
       </svg>
-      Customer request
+      Customer request <br><span id="requests"></span>
     </button>
+    </div>
+    <!-- second button -->
+
   </div>
   <script src="./../scripts/admin-navigation.js"></script>
 </body>
