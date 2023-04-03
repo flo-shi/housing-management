@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- CSS -->
+    <link rel="stylesheet" href="./../../css/bootstrap.min.css" />
+    <link rel="stylesheet" href="./../../css/signup.css" />
+    <!-- fontawsome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+    />
+    <title>Sign up page</title>
+  </head>
+  <body>
+    <div class="info">
+      <h3>Sign-up</h3>
+      <form onsubmit="signUp(event)">
+        <div class="name">
+          <div>
+            <label for="firstname">Firstname</label>
+            <input
+              class="text"
+              type="text"
+              name="firstname"
+              id=""
+              placeholder="Enter your first name:"
+              required
+            />
+          </div>
+          <div>
+            <label for="lastname">Lastname</label>
+            <input
+              class="text"
+              type="text"
+              name="lastname"
+              placeholder="Enter your last name:"
+              required
+            />
+          </div>
+        </div>
+        <div class="name">
+          <div>
+            <label for="email"> Email</label>
+            <input
+              class="text"
+              type="email"
+              name="email"
+              placeholder="Enter your email:"
+              required
+            />
+          </div>
+        </div>
+        <div class="name">
+          <div>
+            <label for="password">Password</label>
+            <div class="password">
+              <input
+                id="password"
+                class="text"
+                type="password"
+                name="password"
+                placeholder="Enter password:"
+                required
+                onkeyup="checkPasswordStrength();"
+              />
+              <i class="fa-regular fa-eye" id="eye"></i>
+              <i class="fa-regular fa-eye-slash" id="eye-slash"></i>
+            </div>
+            <div id="password-strength"></div>
+          </div>
+          <div>
+            <label for="confirm password"> Confirm password</label>
+            <div class="password">
+              <input
+                id="confirm-password"
+                class="text"
+                type="password"
+                name="confirm password"
+                placeholder="Confirm your Password:"
+                required
+              />
+              <i class="fa-regular fa-eye" id="eye-c-p"></i>
+              <i class="fa-regular fa-eye-slash" id="eye-slash-c-p"></i>
+            </div>
+            <p id="message"></p>
+          </div>
+        </div>
+        <button class="btn btn-default" id="submit-btn">Get started</button>
+      </form>
+      <a class="login" href="./login.html">Already have an account?</a>
+    </div>
+    <img class="logo" src="./../image/tenalord-logo.png" alt="logo" />
+    <!-- Js -->
+    <script src="./../../javascript/jquery.min.js"></script>
+    <script src="./../../javascript/signup.js"></script>
+  </body>
+</html>
