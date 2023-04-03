@@ -25,8 +25,6 @@ function login(event){
         console.log(data)
     });
 
-
-
     // setTimeout(function () {
     //     document.location.href = "admin.html"
     // },300)
