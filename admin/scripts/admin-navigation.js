@@ -85,7 +85,16 @@ function adminLoadEditUser(user) {
 //----------------------------------
 
 function adminLoadAddProerty() {
-    $("#main-section").load("widgets/properties/admin-add-property.html");
+    let url = "http://localhost/housing-management/php/api.php?flombient=getAllUsers";
+    $.get(url,function(users){
+        $("#main-section").load("widgets/properties/admin-add-property.html",function (){
+            let select = '';
+            JSON.parse(users).forEach((user)=>{
+                select+="<option value='user.uid'>"+user.uf_name+" "+user.ul_name +"</option>";
+            });
+            document.querySelector('#add-property select').innerHTML = select;
+        });
+    })
 }
 
 function adminLoadEditProerty() {
