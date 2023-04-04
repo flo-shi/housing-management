@@ -5,7 +5,7 @@ include("./connect.php");
 
 function login($email, $password){
     //get connection from connect.php file.
-    $con = connect();
+    $conn = connect();
 
     $hashedPassword =$password;//password_hash($password, PASSWORD_DEFAULT);
     //create sql to attempt login
@@ -38,7 +38,7 @@ function signUp($uf_name, $ul_name, $u_email, $u_number, $password){
     $u_level = "client";
 
     $hashedPassword =$password;//password_hash($password, PASSWORD_DEFAULT);
-    $connect = connect();
+    $conn = connect();
 
     //create sql to add user;
     $sql = "INSERT INTO `users`(
@@ -85,12 +85,12 @@ function checkIfUserEmailExists($email, $uid = null){
 
 
     //create connection
-    $connection = connect();
+    $conn = connect();
 
 
 
     //execute query and get results
-    $results = $connection->query($sql);
+    $results = $conn->query($sql);
 
     //check if results is empty
     if($results->num_rows == 0) {
@@ -106,7 +106,7 @@ function getLoggedInUser(){
 }
 
 function getDashboardData(){
-    $con = connect();
+    $conn = connect();
 
     $sqlUsers = "Select * from users";
     $sqlProperties = "select * from properties";
@@ -167,7 +167,7 @@ function deleteSingleUser($uid){
 
 function addUser($uf_name, $ul_name, $u_email, $u_number,$u_level){
 
-    $connect = connect();
+    $conn = connect();
 
     //create sql to add user;
     $sql = "INSERT INTO `users`(
@@ -205,7 +205,7 @@ function addUser($uf_name, $ul_name, $u_email, $u_number,$u_level){
 
 function updateUser($uid,$uf_name, $ul_name, $u_email, $u_number,$u_level){
 
-    $connect = connect();
+    $conn = connect();
 
     //create sql to add user;
     $sql = "

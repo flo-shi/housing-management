@@ -4,49 +4,49 @@ include("./connect.php");
 
 
 
-function login($email, $password)
-{
-    //get connection from connect.php file.
-    $con = connect();
+// function login($email, $password)
+// {
+//     //get connection from connect.php file.
+//     $con = connect();
 
-    $hashedPassword =$password;//password_hash($password, PASSWORD_DEFAULT);
-    //create sql to attempt login
-    $sql = 'SELECT `uid`, `uf_name`, `ul_name`, `u_email`, `u_number`, `u_level` FROM `users` WHERE `u_email` = "' . $email . '" AND `password` = "' . $hashedPassword . '"';
+//     $hashedPassword =$password;//password_hash($password, PASSWORD_DEFAULT);
+//     //create sql to attempt login
+//     $sql = 'SELECT `uid`, `uf_name`, `ul_name`, `u_email`, `u_number`, `u_level` FROM `users` WHERE `u_email` = "' . $email . '" AND `password` = "' . $hashedPassword . '"';
 
 
-    //get result
-    $result = $con->query($sql);
+//     //get result
+//     $result = $con->query($sql);
 
-    //get rows
-    $rows = $result->num_rows;
+//     //get rows
+//     $rows = $result->num_rows;
 
-    //setup response
-    $response = "";
-    //username and password failed if rows length = 0
-    if ($rows === 0) {
-        $response->title = "login failed";
-        $response->message = 'invalid username and password';
-    } else {
-        //create session
-        $user = "";
-        while ($row = $result->fetch_assoc()) {
-//             $user = json_encode($row);
-        }
+//     //setup response
+//     $response = "";
+//     //username and password failed if rows length = 0
+//     if ($rows === 0) {
+//         $response->title = "login failed";
+//         $response->message = 'invalid username and password';
+//     } else {
+//         //create session
+//         $user = "";
+//         while ($row = $result->fetch_assoc()) {
+// //             $user = json_encode($row);
+//         }
 
-        $response->title = "login success";
-//        $response->user = $user;
-        $response->message = "login success";
-    }
+//         $response->title = "login success";
+// //        $response->user = $user;
+//         $response->message = "login success";
+//     }
 
-    echo json_encode($response);
+//     echo json_encode($response);
 
-}
+// }
 
 
 function signUp($uf_name, $ul_name, $u_email, $u_number, $password){
     $u_level = "client";
 
-    $connect = connect();
+    $conn = connect();
 
     //create sql to add user;
     $sql = "INSERT INTO `users`(
@@ -83,84 +83,84 @@ function signUp($uf_name, $ul_name, $u_email, $u_number, $password){
 }
 
 
-function login($email, $password)
-{
-    //get connection from connect.php file.
-    $con = connect();
+// function login($email, $password)
+// {
+//     //get connection from connect.php file.
+//     $conn = connect();
 
-    $hashedPassword =$password;//password_hash($password, PASSWORD_DEFAULT);
-    //create sql to attempt login
-    $sql = 'SELECT `uid`, `uf_name`, `ul_name`, `u_email`, `u_number`, `u_level` FROM `users` WHERE `u_email` = "' . $email . '" AND `password` = "' . $hashedPassword . '"';
-
-
-    //get result
-    $result = $con->query($sql);
-
-    //get rows
-    $rows = $result->num_rows;
-
-    //setup response
-    $response = "";
-    //username and password failed if rows length = 0
-    if ($rows === 0) {
-        $response->title = "login failed";
-        $response->message = 'invalid username and password';
-    } else {
-        //create session
-        $user = "";
-        while ($row = $result->fetch_assoc()) {
-//             $user = json_encode($row);
-        }
-
-        $response->title = "login success";
-//        $response->user = $user;
-        $response->message = "login success";
-    }
-
-    echo json_encode($response);
-
-}
+//     $hashedPassword =$password;//password_hash($password, PASSWORD_DEFAULT);
+//     //create sql to attempt login
+//     $sql = 'SELECT `uid`, `uf_name`, `ul_name`, `u_email`, `u_number`, `u_level` FROM `users` WHERE `u_email` = "' . $email . '" AND `password` = "' . $hashedPassword . '"';
 
 
+//     //get result
+//     $result = $conn->query($sql);
 
-function adminSignUp($uf_name, $ul_name, $u_email, $u_number, $password){
-    $u_level = "admin";
+//     //get rows
+//     $rows = $result->num_rows;
 
-    $connect = connect();
+//     //setup response
+//     $response = "";
+//     //username and password failed if rows length = 0
+//     if ($rows === 0) {
+//         $response->title = "login failed";
+//         $response->message = 'invalid username and password';
+//     } else {
+//         //create session
+//         $user = "";
+//         while ($row = $result->fetch_assoc()) {
+// //             $user = json_encode($row);
+//         }
 
-    //create sql to add user;
-    $sql = "INSERT INTO `users`(
-    `uf_name`,
-    `ul_name`,
-    `u_email`,
-    `u_number`,
-    `u_level`,
-    `password`
- )
- VALUES('".$uf_name."', '".$ul_name."', '".$u_email."', '".$u_number."', '".$u_level."', '".$password."')";
+//         $response->title = "login success";
+// //        $response->user = $user;
+//         $response->message = "login success";
+//     }
+
+//     echo json_encode($response);
+
+// }
 
 
-    //check if user email exists
-    $userEmailExists = checkIfUserEmailExists($u_email);
 
-    $response = "";
-    if($userEmailExists === true){
-        $response->title="signup error";
-        $response->message=`email {$u_email} already exists!`;
-    }
-    else {
-        $saveToDb = $connect->query($sql);
+// function adminSignUp($uf_name, $ul_name, $u_email, $u_number, $password){
+//     $u_level = "admin";
 
-        if($saveToDb === true){
-            $response->title = "Signup success";
-            $response->message = "account has been created successfully. proceed to login";
-        }
-    }
+//     $conn = connect();
 
-    //return response
-    echo json_encode($response);
+//     //create sql to add user;
+//     $sql = "INSERT INTO `users`(
+//     `uf_name`,
+//     `ul_name`,
+//     `u_email`,
+//     `u_number`,
+//     `u_level`,
+//     `password`
+//  )
+//  VALUES('".$uf_name."', '".$ul_name."', '".$u_email."', '".$u_number."', '".$u_level."', '".$password."')";
 
-}
+
+//     //check if user email exists
+//     $userEmailExists = checkIfUserEmailExists($u_email);
+
+//     $response = "";
+//     if($userEmailExists === true){
+//         $response->title="signup error";
+//         $response->message=`email {$u_email} already exists!`;
+//     }
+//     else {
+//         $saveToDb = $connect->query($sql);
+
+//         if($saveToDb === true){
+//             $response->title = "Signup success";
+//             $response->message = "account has been created successfully. proceed to login";
+//         }
+//     }
+
+//     //return response
+//     echo json_encode($response);
+
+// }
 
 function checkIfUserEmailExists($email){
     //return value
@@ -170,10 +170,10 @@ function checkIfUserEmailExists($email){
     $sql = "SELECT * FROM `users` WHERE `u_email` = '".$email."'";
 
     //create connection
-    $connection = connect();
+    $conn = connect();
 
     //execute query and get results
-    $results = $connection->query($sql);
+    $results = $conn->query($sql);
 
     //check if results is empty
     if($results->num_rows == 0) {
