@@ -14,7 +14,7 @@ function login($email, $password){
 //    die($sql);
 
     //get result
-    $result = $con->query($sql);
+    $result = $conn->query($sql);
 
     //get rows
     $rows = $result->num_rows;
@@ -61,7 +61,7 @@ function signUp($uf_name, $ul_name, $u_email, $u_number, $password){
         $response->message=`email {$u_email} already exists!`;
     }
     else {
-        $saveToDb = $connect->query($sql);
+        $saveToDb = $conn->query($sql);
 
         if($saveToDb === true){
             $response->title = "Signup success";
@@ -106,7 +106,7 @@ function getLoggedInUser(){
 }
 
 function getDashboardData(){
-    $conn = connect();
+    $con = connect();
 
     $sqlUsers = "Select * from users";
     $sqlProperties = "select * from properties";
@@ -190,7 +190,7 @@ function addUser($uf_name, $ul_name, $u_email, $u_number,$u_level){
         $response->message="email ".$u_email." already exists!";
     }
     else {
-        $saveToDb = $connect->query($sql);
+        $saveToDb = $conn->query($sql);
 
         if($saveToDb === true){
             $response->title = "Add User success";
@@ -223,7 +223,7 @@ WHERE
 
     $response = new stdClass();
 
-        $saveToDb = $connect->query($sql);
+        $saveToDb = $conn->query($sql);
 
         if($saveToDb === true){
             $response->title = "Update User success";
